@@ -2,14 +2,13 @@ from decouple import config
 
 
 class Config:
-    SECRET_KEY = "qzJhQ4aWAjXBXz5oWc4x48Jy"
+    SECRET_KEY = config("SECRET_KEY")
 
 
 class DevelopmentConfig(Config):
     DEBUG = True
 
     SQLALCHEMY_DATABASE_URI = f'mysql://{config("DB_USER")}:{config("DB_PASSWORD")}@{config("DB_HOST")}/tareas'
-    #SQLALCHEMY_DATABASE_URI = "mysql://root:data1814@localhost/tareas"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     MAIL_SERVER = "smtp.gmail.com"
