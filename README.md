@@ -4,7 +4,7 @@ A Python+Flask project where users can register and manage their tasks (create, 
 
 ## Project is up and running in [Heroku](https://flask-tasks-crud.herokuapp.com/login)
 
-You can register and test the functionalities.
+You can register with your own email and test the functionalities.
 
 Or you can login with an existing user:
 
